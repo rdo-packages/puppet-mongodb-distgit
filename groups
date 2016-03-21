@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-b2ea5149ba8a46c8fd5edc628546757607a9adc6	puppet-mongodb-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+ca8e6c2e4fac76943409f3002587d4348ccec777       	puppet-mongodb-distgit-core
+b2ea5149ba8a46c8fd5edc628546757607a9adc6        	puppet-mongodb-distgit-ptl
+global:Registered-Users		Registered Users
