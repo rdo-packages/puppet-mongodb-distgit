@@ -12,7 +12,7 @@ Source0:        https://github.com/puppetlabs/puppetlabs-mongodb/archive/%{versi
 
 BuildArch:      noarch
 
-Requires:       puppet-apt
+#Requires:       puppet-apt
 Requires:       puppet-stdlib
 Requires:       puppet >= 2.7.0
 
