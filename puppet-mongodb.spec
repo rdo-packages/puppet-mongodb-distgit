@@ -1,4 +1,10 @@
+%{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-mongodb
+%global commit 1cfb235894795f216ce3ae3fc02eb52d112e9197
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 
 Name:           puppet-mongodb
 Version:        XXX
@@ -8,7 +14,7 @@ License:        Apache-2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-mongodb
 
-Source0:        https://github.com/puppetlabs/puppetlabs-mongodb/archive/%{version}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
