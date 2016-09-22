@@ -7,8 +7,8 @@
 
 
 Name:           puppet-mongodb
-Version:        XXX
-Release:        XXX
+Version:        0.14.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs MongoDB on RHEL/Ubuntu/Debian.
 License:        Apache-2.0
 
@@ -50,4 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mongodb/
 
 
 %changelog
+* Thu Sep 22 2016 Haikel Guemar <hguemar@fedoraproject.org> - 0.14.0-1.1cfb235.git
+- Newton update 0.14.0 (1cfb235894795f216ce3ae3fc02eb52d112e9197)
+
 
