@@ -1,13 +1,13 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-mongodb
-%global commit 1cfb235894795f216ce3ae3fc02eb52d112e9197
+%global commit 13af1c585a46b1450383a1b6a7fff99d077d0a01
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-mongodb
-Version:        0.14.0
+Version:        0.15.0
 Release:        1%{?alphatag}%{?dist}
 Summary:        Installs MongoDB on RHEL/Ubuntu/Debian.
 License:        Apache-2.0
@@ -50,6 +50,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mongodb/
 
 
 %changelog
+* Tue Nov 01 2016 Jon Schlueter <jschluet@redhat.com> 0.15.0-1
+- Update to 0.15.0 (13af1c585a46b1450383a1b6a7fff99d077d0a01)
+
 * Thu Sep 22 2016 Haikel Guemar <hguemar@fedoraproject.org> - 0.14.0-1.1cfb235.git
 - Newton update 0.14.0 (1cfb235894795f216ce3ae3fc02eb52d112e9197)
 
