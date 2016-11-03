@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-mongodb
-%global commit 1cfb235894795f216ce3ae3fc02eb52d112e9197
+%global commit 5091b520053b33aca7e209f2ce5f6eab10cb130d
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
