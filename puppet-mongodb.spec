@@ -1,20 +1,16 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{upstream_version}}
 %define upstream_name puppetlabs-mongodb
-%global commit 5091b520053b33aca7e209f2ce5f6eab10cb130d
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
 
 
 Name:           puppet-mongodb
 Version:        0.16.0
-Release:        1%{?alphatag}%{?dist}
+Release:        1%{?dist}
 Summary:        Installs MongoDB on RHEL/Ubuntu/Debian.
 License:        Apache-2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-mongodb
 
-Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{version}.tar.gz#/%{upstream_name}-%{version}.tar.gz
 
 BuildArch:      noarch
 
