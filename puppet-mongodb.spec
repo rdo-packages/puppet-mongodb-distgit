@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-mongodb
-%global commit 5091b520053b33aca7e209f2ce5f6eab10cb130d
+%global commit ed8d47bfe56433feae475aba61a12656c7ae61c2
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-mongodb
-Version:        XXX
-Release:        XXX
+Version:        0.17.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs MongoDB on RHEL/Ubuntu/Debian.
 License:        ASL 2.0
 
@@ -50,4 +50,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mongodb/
 
 
 %changelog
+* Thu Feb 09 2017 Alfredo Moralejo <amoralej@redhat.com> 0.17.0-1.ed8d47bgit
+- Ocata update 0.17.0 (ed8d47bfe56433feae475aba61a12656c7ae61c2)
 
