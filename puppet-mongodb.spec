@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-mongodb
-%global commit 5091b520053b33aca7e209f2ce5f6eab10cb130d
+%global commit 2feae027bcee4c3cf5957d81b7edc6fd5905b3c0
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-mongodb
-Version:        XXX
-Release:        XXX
+Version:        1.0.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs MongoDB on RHEL/Ubuntu/Debian.
 License:        ASL 2.0
 
@@ -50,5 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mongodb/
 
 
 %changelog
+* Fri Aug 25 2017 Alfredo Moralejo <amoralej@redhat.com> 1.0.0-1.2feae02git
+- Pike update 1.0.0 (2feae027bcee4c3cf5957d81b7edc6fd5905b3c0)
 
 
