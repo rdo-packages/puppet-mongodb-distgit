@@ -44,11 +44,8 @@ install -d -m 0755 %{buildroot}/%{_datadir}/openstack-puppet/modules/mongodb/
 cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mongodb/
 
 
-
 %files
 %{_datadir}/openstack-puppet/modules/mongodb/
 
 
 %changelog
-
-
