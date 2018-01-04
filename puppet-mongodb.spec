@@ -49,3 +49,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mongodb/
 
 
 %changelog
+# REMOVEME: error caused by commit https://github.com/puppetlabs/puppetlabs-mongodb/commit/00002d5666205294463f3a342ccf89c8f0442893
