@@ -1,20 +1,20 @@
 %{!?upstream_version: %global upstream_version %{commit}}
-%define upstream_name puppetlabs-mongodb
-%global commit 5091b520053b33aca7e209f2ce5f6eab10cb130d
+%define upstream_name puppet-mongodb
+%global commit c60e4ca4d9344b733d6d8048c8ef8face92a720e
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-mongodb
-Version:        XXX
-Release:        XXX
+Version:        1.1.1
+Release:        0.1%{?alphatag}%{?dist}
 Summary:        Installs MongoDB on RHEL/Ubuntu/Debian.
 License:        ASL 2.0
 
-URL:            https://github.com/puppetlabs/puppetlabs-mongodb
+URL:            https://github.com/voxpopuli/puppet-mongodb
 
-Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/voxpopuli/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
@@ -49,3 +49,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mongodb/
 
 
 %changelog
+* Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 1.1.1-0.1.c60e4cagit
+- Update to 1.1.1-rc0 (c60e4ca4d9344b733d6d8048c8ef8face92a720e)
+
