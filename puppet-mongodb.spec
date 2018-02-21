@@ -1,5 +1,5 @@
 %{!?upstream_version: %global upstream_version %{commit}}
-%define upstream_name puppetlabs-mongodb
+%define upstream_name puppet-mongodb
 %global commit 5091b520053b33aca7e209f2ce5f6eab10cb130d
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
@@ -12,7 +12,7 @@ Release:        XXX
 Summary:        Installs MongoDB on RHEL/Ubuntu/Debian.
 License:        ASL 2.0
 
-URL:            https://github.com/puppetlabs/puppetlabs-mongodb
+URL:            https://github.com/puppetlabs/puppet-mongodb
 
 Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
