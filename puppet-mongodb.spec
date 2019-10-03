@@ -1,14 +1,15 @@
+%global milestone .0rc0
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-mongodb
-%global commit 5091b520053b33aca7e209f2ce5f6eab10cb130d
+%global commit 041bd39b010d3db4134f3ed8e23c3e5d06bcbaaf
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-mongodb
-Version:        XXX
-Release:        XXX
+Version:        3.0.1
+Release:        0.1%{?milestone}%{?alphatag}%{?dist}
 Summary:        Installs MongoDB on RHEL/Ubuntu/Debian.
 License:        ASL 2.0
 
@@ -49,3 +50,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mongodb/
 
 
 %changelog
+* Thu Oct 3 2019 RDO <dev@lists.rdoproject.org> 3.0.1-0.1.0rc0.041bd39git
+- Update to post 3.0.1-rc0 (041bd39b010d3db4134f3ed8e23c3e5d06bcbaaf)
+
